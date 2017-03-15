@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
+<!-- You can find pdml2html.xsl in /usr/share/wireshark or at http://anonsvn.wireshark.org/trunk/wireshark/pdml2html.xsl. -->
+<pdml version="0" creator="wireshark/1.10.6" time="Mon Mar 13 01:27:27 2017" capture_file="/home/ryo/hobby/ctf/q33/q33.pcap">
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="191">
+    <field name="num" pos="0" show="76" showname="Number" value="4c" size="191"/>
+    <field name="len" pos="0" show="191" showname="Frame Length" value="bf" size="191"/>
+    <field name="caplen" pos="0" show="191" showname="Captured Length" value="bf" size="191"/>
+    <field name="timestamp" pos="0" show="Nov  4, 2013 13:02:39.696942000 JST" showname="Captured Time" value="1383537759.696942000" size="191"/>
+  </proto>
+  <proto name="frame" showname="Frame 76: 191 bytes on wire (1528 bits), 191 bytes captured (1528 bits)" size="191" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: Nov  4, 2013 13:02:39.696942000 JST" size="0" pos="0" show="Nov  4, 2013 13:02:39.696942000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_epoch" showname="Epoch Time: 1383537759.696942000 seconds" size="0" pos="0" show="1383537759.696942000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000033000 seconds" size="0" pos="0" show="0.000033000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000033000 seconds" size="0" pos="0" show="0.000033000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.098143000 seconds" size="0" pos="0" show="1.098143000"/>
+    <field name="frame.number" showname="Frame Number: 76" size="0" pos="0" show="76"/>
+    <field name="frame.len" showname="Frame Length: 191 bytes (1528 bits)" size="0" pos="0" show="191"/>
+    <field name="frame.cap_len" showname="Capture Length: 191 bytes (1528 bits)" size="0" pos="0" show="191"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="0"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="0"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ip:tcp:ssl:pkcs-1:x509sat:x509sat:x509sat:x509sat:x509sat:x509sat:pkcs-1:pkcs-1:pkcs-1:x509sat:x509sat:x509sat:x509sat:pkcs-1:pkcs-1:ssl" size="0" pos="0" show="eth:ip:tcp:ssl:pkcs-1:x509sat:x509sat:x509sat:x509sat:x509sat:x509sat:pkcs-1:pkcs-1:pkcs-1:x509sat:x509sat:x509sat:x509sat:pkcs-1:pkcs-1:ssl"/>
+    <field name="frame.coloring_rule.name" showname="Coloring Rule Name: TCP" size="0" pos="0" show="TCP"/>
+    <field name="frame.coloring_rule.string" showname="Coloring Rule String: tcp" size="0" pos="0" show="tcp"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: Vmware_f4:85:b0 (00:50:56:f4:85:b0), Dst: Vmware_37:6a:33 (00:0c:29:37:6a:33)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: Vmware_37:6a:33 (00:0c:29:37:6a:33)" size="6" pos="0" show="00:0c:29:37:6a:33" value="000c29376a33">
+      <field name="eth.addr" showname="Address: Vmware_37:6a:33 (00:0c:29:37:6a:33)" size="6" pos="0" show="00:0c:29:37:6a:33" value="000c29376a33"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="0" value="0" unmaskedvalue="000c29"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="0" value="0" unmaskedvalue="000c29"/>
+    </field>
+    <field name="eth.src" showname="Source: Vmware_f4:85:b0 (00:50:56:f4:85:b0)" size="6" pos="6" show="00:50:56:f4:85:b0" value="005056f485b0">
+      <field name="eth.addr" showname="Address: Vmware_f4:85:b0 (00:50:56:f4:85:b0)" size="6" pos="6" show="00:50:56:f4:85:b0" value="005056f485b0"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="0" value="0" unmaskedvalue="005056"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="0" value="0" unmaskedvalue="005056"/>
+    </field>
+    <field name="eth.type" showname="Type: IP (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 192.168.0.40 (192.168.0.40), Dst: 192.168.66.129 (192.168.66.129)" size="20" pos="14">
+    <field name="ip.version" showname="Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname="Header length: 20 bytes" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))" size="1" pos="15" show="0" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0x00)" size="1" pos="15" show="0x00" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)" size="1" pos="15" show="0x00" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 177" size="2" pos="16" show="177" value="00b1"/>
+    <field name="ip.id" showname="Identification: 0x4c41 (19521)" size="2" pos="18" show="0x4c41" value="4c41"/>
+    <field name="ip.flags" showname="Flags: 0x00" size="1" pos="20" show="0x00" value="00">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="0" value="00"/>
+      <field name="ip.flags.df" showname=".0.. .... = Don&apos;t fragment: Not set" size="1" pos="20" show="0" value="00"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="0" value="00"/>
+    </field>
+    <field name="ip.frag_offset" showname="Fragment offset: 0" size="2" pos="20" show="0" value="0000"/>
+    <field name="ip.ttl" showname="Time to live: 128" size="1" pos="22" show="128" value="80"/>
+    <field name="ip.proto" showname="Protocol: TCP (6)" size="1" pos="23" show="6" value="06"/>
+    <field name="ip.checksum" showname="Header checksum: 0x2a0c [validation disabled]" size="2" pos="24" show="0x2a0c" value="2a0c">
+      <field name="ip.checksum_good" showname="Good: False" size="2" pos="24" show="0" value="2a0c"/>
+      <field name="ip.checksum_bad" showname="Bad: False" size="2" pos="24" show="0" value="2a0c"/>
+    </field>
+    <field name="ip.src" showname="Source: 192.168.0.40 (192.168.0.40)" size="4" pos="26" show="192.168.0.40" value="c0a80028"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.0.40 (192.168.0.40)" hide="yes" size="4" pos="26" show="192.168.0.40" value="c0a80028"/>
+    <field name="ip.src_host" showname="Source Host: 192.168.0.40" hide="yes" size="4" pos="26" show="192.168.0.40" value="c0a80028"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.0.40" hide="yes" size="4" pos="26" show="192.168.0.40" value="c0a80028"/>
+    <field name="ip.dst" showname="Destination: 192.168.66.129 (192.168.66.129)" size="4" pos="30" show="192.168.66.129" value="c0a84281"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.66.129 (192.168.66.129)" hide="yes" size="4" pos="30" show="192.168.66.129" value="c0a84281"/>
+    <field name="ip.dst_host" showname="Destination Host: 192.168.66.129" hide="yes" size="4" pos="30" show="192.168.66.129" value="c0a84281"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.66.129" hide="yes" size="4" pos="30" show="192.168.66.129" value="c0a84281"/>
+    <field name="" show="Source GeoIP: Unknown" size="4" pos="26" value="c0a80028"/>
+    <field name="" show="Destination GeoIP: Unknown" size="4" pos="30" value="c0a84281"/>
+  </proto>
+  <proto name="tcp" showname="Transmission Control Protocol, Src Port: https (443), Dst Port: rap-listen (1531), Seq: 1461, Ack: 78, Len: 137" size="20" pos="34">
+    <field name="tcp.srcport" showname="Source port: https (443)" size="2" pos="34" show="443" value="01bb"/>
+    <field name="tcp.dstport" showname="Destination port: rap-listen (1531)" size="2" pos="36" show="1531" value="05fb"/>
+    <field name="tcp.port" showname="Source or Destination Port: 443" hide="yes" size="2" pos="34" show="443" value="01bb"/>
+    <field name="tcp.port" showname="Source or Destination Port: 1531" hide="yes" size="2" pos="36" show="1531" value="05fb"/>
+    <field name="tcp.stream" showname="Stream index: 2" size="0" pos="34" show="2"/>
+    <field name="tcp.len" showname="TCP Segment Len: 137" hide="yes" size="1" pos="46" show="137" value="50"/>
+    <field name="tcp.seq" showname="Sequence number: 1461    (relative sequence number)" size="4" pos="38" show="1461" value="761e2ca0"/>
+    <field name="tcp.nxtseq" showname="Next sequence number: 1598    (relative sequence number)" size="0" pos="34" show="1598"/>
+    <field name="tcp.ack" showname="Acknowledgment number: 78    (relative ack number)" size="4" pos="42" show="78" value="8e6268d6"/>
+    <field name="tcp.hdr_len" showname="Header length: 20 bytes" size="1" pos="46" show="20" value="50"/>
+    <field name="tcp.flags" showname="Flags: 0x018 (PSH, ACK)" size="2" pos="46" show="0x0018" value="18" unmaskedvalue="5018">
+      <field name="tcp.flags.res" showname="000. .... .... = Reserved: Not set" size="1" pos="46" show="0" value="0" unmaskedvalue="50"/>
+      <field name="tcp.flags.ns" showname="...0 .... .... = Nonce: Not set" size="1" pos="46" show="0" value="0" unmaskedvalue="50"/>
+      <field name="tcp.flags.cwr" showname=".... 0... .... = Congestion Window Reduced (CWR): Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.ecn" showname=".... .0.. .... = ECN-Echo: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.urg" showname=".... ..0. .... = Urgent: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.ack" showname=".... ...1 .... = Acknowledgment: Set" size="1" pos="47" show="1" value="1" unmaskedvalue="18"/>
+      <field name="tcp.flags.push" showname=".... .... 1... = Push: Set" size="1" pos="47" show="1" value="1" unmaskedvalue="18"/>
+      <field name="tcp.flags.reset" showname=".... .... .0.. = Reset: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.syn" showname=".... .... ..0. = Syn: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.fin" showname=".... .... ...0 = Fin: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+    </field>
+    <field name="tcp.window_size_value" showname="Window size value: 64240" size="2" pos="48" show="64240" value="faf0"/>
+    <field name="tcp.window_size" showname="Calculated window size: 64240" size="2" pos="48" show="64240" value="faf0"/>
+    <field name="tcp.window_size_scalefactor" showname="Window size scaling factor: -2 (no window scaling used)" size="2" pos="48" show="-2" value="faf0"/>
+    <field name="tcp.checksum" showname="Checksum: 0x840d [validation disabled]" size="2" pos="50" show="0x840d" value="840d">
+      <field name="tcp.checksum_good" showname="Good Checksum: False" size="2" pos="50" show="0" value="840d"/>
+      <field name="tcp.checksum_bad" showname="Bad Checksum: False" size="2" pos="50" show="0" value="840d"/>
+    </field>
+    <field name="tcp.analysis" showname="SEQ/ACK analysis" size="0" pos="34" show="" value="">
+      <field name="tcp.analysis.bytes_in_flight" showname="Bytes in flight: 1597" size="0" pos="34" show="1597"/>
+    </field>
+    <field name="tcp.segment_data" showname="TCP segment data (128 bytes)" size="128" pos="54" show="9c:63:7c:88:ff:6d:a9:0a:12:49:58:11:6b:fa:c9:44:0d:27:f7:1f:d2:e0:31:19:01:4a:cb:bc:33:ad:96:a1:2e:d4:c8:05:58:5d:de:99:98:23:1e:7c:72:96:e1:5a:2d:e5:61:10:cd:7b:2f:c9:30:56:23:fe:15:37:8d:ef:74:34:75:44:10:a2:a9:42:44:3f:fa:c2:a3:e3:e4:d4:12:51:a2:76:29:83:fa:31:6f:08:52:7d:07:86:4c:d6:6e:17:f5:d4:ca:94:e7:ec:ea:de:d8:28:56:2b:e5:d6:2d:d2:d3:94:c1:bd:83:1c:d7:60:6a:99:20:ba:da:fa" value="9c637c88ff6da90a124958116bfac9440d27f71fd2e03119014acbbc33ad96a12ed4c805585dde9998231e7c7296e15a2de56110cd7b2fc9305623fe15378def7434754410a2a942443ffac2a3e3e4d41251a2762983fa316f08527d07864cd66e17f5d4ca94e7eceaded828562be5d62dd2d394c1bd831cd7606a9920badafa"/>
+  </proto>
+  <proto name="fake-field-wrapper">
+    <field name="tcp.segments" showname="2 Reassembled TCP Segments (1502 bytes): #75(1374), #76(128)" size="1502" pos="0" show="" value="">
+      <field name="tcp.segment" showname="Frame: 75, payload: 0-1373 (1374 bytes)" size="1374" pos="0" show="75" value="16030105d90b0005d50005d20002ea308202e6308201ce020900b5ca76b816420d2e300d06092a864886f70d01010505003031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f301e170d3133313130343032303034365a170d3133313230343032303034365a3039310b3009060355040613024a50310e300c06035504070c054f746f7761310c300a060355040a0c034b6569310c300a06035504030c036b656930820122300d06092a864886f70d01010105000382010f003082010a0282010100a4daad49eae0b5c59da0452978ae987e1b96f149dedb62274c97f99ac4544aa90db4aaf9a0967f118b7009097bcb0baeb4a19636777a7747e06ad84496c9c61d18a7b5ca776585a817526ed6d9f0f2abd8c434c62cbf025eb7ce5a83e4a7f9938f3862de24e6292f43270ffda757c17aaa797ff9fe18fd1cb23921dc585d4550384ff5c4f24e6dfc6d4f44b569345808239247c20d266cd0f5e373889ed4e459590b7d742d2837c1c48dcf9418e22191ab4a0bca0ed79b1d45c0ca5d36ea6960c9360c11412329fd5d90ff3467f2d82e23021adf3b6d8be24903b76effc938154ec219f344118f1c41fec31171b62945a07e35762a961a05795389086052dec70203010001300d06092a864886f70d010105050003820101007b1909cf13cd9d88436b9299e0ce7daa6cd2b94180f14f45c0d0d984ddc9cb46126744e400c5ae375c8a8bac61d2cd97e00d72f4298ae02894b30f53d8d0e083e0eae3a066576cc66e43933a5919718e1af577fe5387c3827fee9b5fce4cb33143cb2eed88afc5251a199714b3bc6f648f28a45a1d5c8bdc903ad431d1c05dec15dbc92d8f6ee3f0b23267408c8d12514c899fe06f970f255fdf70531a65af24c1ef7118c1b9ebae914269e61cbf36a89d75552570442e395173ad89a5ce020f1a050e63a6c8e6c343afa5dcaa087dedae70558b846e5065b65539f145941d0271d06dd8aa688f532da1a598ca3fd7083149393813953aef84e0094506ade99a0002e2308202de308201c602090094f8fffe850d57e3300d06092a864886f70d01010505003031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f301e170d3133313130343031343935365a170d3233313130323031343935365a3031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f30820122300d06092a864886f70d01010105000382010f003082010a0282010100ba7d3b1ed67d7ecfad8d536bee3531747be94ea9e4ac1403a3300fbefdfc4ee241362519fb8e28baa27279408d303f38c3ae1972b2cd5b152edaa2e9a29223f1c91199a0374c5a06d18c0b55d767b78445be755c65787a8bc5e0a9288728457c91441e03216506c87e696eb54f4b149082b1bd83d2772d7ac87cb6f06c61ca0dafec275c9a30a75c9fc8d39a6567210162cdeb5f686670b5850729c12f3d69d516ab28818c43460d3d0531e6b25e0230a184fb1bb8a00ee0b737e248d7e6a70bc6abe2f3d915c3d7583113c8d72855c0e3cb50531480eaece5dbab5ea1641788b3079d3db02a0fe121fd1b411c108a86c4b02f4c8f9b2a8386cf908b4b5319830203010001300d06092a864886f70d010105050003820101008a6269e64c5d98953adc0a6f1b21f3c363c4f29c5f3181c0ce183284ed1c035062cf22c6c8147512809ecf3c5260de218ae8a6ad20d904334c700ace89628601fadd031fc9d7416f4f1b7320369a8f4e1b13a3771987234bb82fef51368a148dda0f8216b10b7d227ef2519d013556c6ce2d3a6e9bbcf5daa8460aff34bb0ea4"/>
+      <field name="tcp.segment" showname="Frame: 76, payload: 1374-1501 (128 bytes)" size="128" pos="1374" show="76" value="9c637c88ff6da90a124958116bfac9440d27f71fd2e03119014acbbc33ad96a12ed4c805585dde9998231e7c7296e15a2de56110cd7b2fc9305623fe15378def7434754410a2a942443ffac2a3e3e4d41251a2762983fa316f08527d07864cd66e17f5d4ca94e7eceaded828562be5d62dd2d394c1bd831cd7606a9920badafa"/>
+      <field name="tcp.segment.count" showname="Segment count: 2" size="0" pos="0" show="2"/>
+      <field name="tcp.reassembled.length" showname="Reassembled TCP length: 1502" size="0" pos="0" show="1502"/>
+      <field name="tcp.reassembled.data" showname="Reassembled TCP Data: 16030105d90b0005d50005d20002ea308202e6308201ce02..." size="1502" pos="0" show="16:03:01:05:d9:0b:00:05:d5:00:05:d2:00:02:ea:30:82:02:e6:30:82:01:ce:02:09:00:b5:ca:76:b8:16:42:0d:2e:30:0d:06:09:2a:86:48:86:f7:0d:01:01:05:05:00:30:31:31:0f:30:0d:06:03:55:04:0a:0c:06:6b:73:6e:63:74:66:31:1e:30:1c:06:03:55:04:03:0c:15:6b:73:6e:63:74:66:2e:73:77:65:65:74:64:75:65:74:2e:69:6e:66:6f:30:1e:17:0d:31:33:31:31:30:34:30:32:30:30:34:36:5a:17:0d:31:33:31:32:30:34:30:32:30:30:34:36:5a:30:39:31:0b:30:09:06:03:55:04:06:13:02:4a:50:31:0e:30:0c:06:03:55:04:07:0c:05:4f:74:6f:77:61:31:0c:30:0a:06:03:55:04:0a:0c:03:4b:65:69:31:0c:30:0a:06:03:55:04:03:0c:03:6b:65:69:30:82:01:22:30:0d:06:09:2a:86:48:86:f7:0d:01:01:01:05:00:03:82:01:0f:00:30:82:01:0a:02:82:01:01:00:a4:da:ad:49:ea:e0:b5:c5:9d:a0:45:29:78:ae:98:7e:1b:96:f1:49:de:db:62:27:4c:97:f9:9a:c4:54:4a:a9:0d:b4:aa:f9:a0:96:7f:11:8b:70:09:09:7b:cb:0b:ae:b4:a1:96:36:77:7a:77:47:e0:6a:d8:44:96:c9:c6:1d:18:a7:b5:ca:77:65:85:a8:17:52:6e:d6:d9:f0:f2:ab:d8:c4:34:c6:2c:bf:02:5e:b7:ce:5a:83:e4:a7:f9:93:8f:38:62:de:24:e6:29:2f:43:27:0f:fd:a7:57:c1:7a:aa:79:7f:f9:fe:18:fd:1c:b2:39:21:dc:58:5d:45:50:38:4f:f5:c4:f2:4e:6d:fc:6d:4f:44:b5:69:34:58:08:23:92:47:c2:0d:26:6c:d0:f5:e3:73:88:9e:d4:e4:59:59:0b:7d:74:2d:28:37:c1:c4:8d:cf:94:18:e2:21:91:ab:4a:0b:ca:0e:d7:9b:1d:45:c0:ca:5d:36:ea:69:60:c9:36:0c:11:41:23:29:fd:5d:90:ff:34:67:f2:d8:2e:23:02:1a:df:3b:6d:8b:e2:49:03:b7:6e:ff:c9:38:15:4e:c2:19:f3:44:11:8f:1c:41:fe:c3:11:71:b6:29:45:a0:7e:35:76:2a:96:1a:05:79:53:89:08:60:52:de:c7:02:03:01:00:01:30:0d:06:09:2a:86:48:86:f7:0d:01:01:05:05:00:03:82:01:01:00:7b:19:09:cf:13:cd:9d:88:43:6b:92:99:e0:ce:7d:aa:6c:d2:b9:41:80:f1:4f:45:c0:d0:d9:84:dd:c9:cb:46:12:67:44:e4:00:c5:ae:37:5c:8a:8b:ac:61:d2:cd:97:e0:0d:72:f4:29:8a:e0:28:94:b3:0f:53:d8:d0:e0:83:e0:ea:e3:a0:66:57:6c:c6:6e:43:93:3a:59:19:71:8e:1a:f5:77:fe:53:87:c3:82:7f:ee:9b:5f:ce:4c:b3:31:43:cb:2e:ed:88:af:c5:25:1a:19:97:14:b3:bc:6f:64:8f:28:a4:5a:1d:5c:8b:dc:90:3a:d4:31:d1:c0:5d:ec:15:db:c9:2d:8f:6e:e3:f0:b2:32:67:40:8c:8d:12:51:4c:89:9f:e0:6f:97:0f:25:5f:df:70:53:1a:65:af:24:c1:ef:71:18:c1:b9:eb:ae:91:42:69:e6:1c:bf:36:a8:9d:75:55:25:70:44:2e:39:51:73:ad:89:a5:ce:02:0f:1a:05:0e:63:a6:c8:e6:c3:43:af:a5:dc:aa:08:7d:ed:ae:70:55:8b:84:6e:50:65:b6:55:39:f1:45:94:1d:02:71:d0:6d:d8:aa:68:8f:53:2d:a1:a5:98:ca:3f:d7:08:31:49:39:38:13:95:3a:ef:84:e0:09:45:06:ad:e9:9a:00:02:e2:30:82:02:de:30:82:01:c6:02:09:00:94:f8:ff:fe:85:0d:57:e3:30:0d:06:09:2a:86:48:86:f7:0d:01:01:05:05:00:30:31:31:0f:30:0d:06:03:55:04:0a:0c:06:6b:73:6e:63:74:66:31:1e:30:1c:06:03:55:04:03:0c:15:6b:73:6e:63:74:66:2e:73:77:65:65:74:64:75:65:74:2e:69:6e:66:6f:30:1e:17:0d:31:33:31:31:30:34:30:31:34:39:35:36:5a:17:0d:32:33:31:31:30:32:30:31:34:39:35:36:5a:30:31:31:0f:30:0d:06:03:55:04:0a:0c:06:6b:73:6e:63:74:66:31:1e:30:1c:06:03:55:04:03:0c:15:6b:73:6e:63:74:66:2e:73:77:65:65:74:64:75:65:74:2e:69:6e:66:6f:30:82:01:22:30:0d:06:09:2a:86:48:86:f7:0d:01:01:01:05:00:03:82:01:0f:00:30:82:01:0a:02:82:01:01:00:ba:7d:3b:1e:d6:7d:7e:cf:ad:8d:53:6b:ee:35:31:74:7b:e9:4e:a9:e4:ac:14:03:a3:30:0f:be:fd:fc:4e:e2:41:36:25:19:fb:8e:28:ba:a2:72:79:40:8d:30:3f:38:c3:ae:19:72:b2:cd:5b:15:2e:da:a2:e9:a2:92:23:f1:c9:11:99:a0:37:4c:5a:06:d1:8c:0b:55:d7:67:b7:84:45:be:75:5c:65:78:7a:8b:c5:e0:a9:28:87:28:45:7c:91:44:1e:03:21:65:06:c8:7e:69:6e:b5:4f:4b:14:90:82:b1:bd:83:d2:77:2d:7a:c8:7c:b6:f0:6c:61:ca:0d:af:ec:27:5c:9a:30:a7:5c:9f:c8:d3:9a:65:67:21:01:62:cd:eb:5f:68:66:70:b5:85:07:29:c1:2f:3d:69:d5:16:ab:28:81:8c:43:46:0d:3d:05:31:e6:b2:5e:02:30:a1:84:fb:1b:b8:a0:0e:e0:b7:37:e2:48:d7:e6:a7:0b:c6:ab:e2:f3:d9:15:c3:d7:58:31:13:c8:d7:28:55:c0:e3:cb:50:53:14:80:ea:ec:e5:db:ab:5e:a1:64:17:88:b3:07:9d:3d:b0:2a:0f:e1:21:fd:1b:41:1c:10:8a:86:c4:b0:2f:4c:8f:9b:2a:83:86:cf:90:8b:4b:53:19:83:02:03:01:00:01:30:0d:06:09:2a:86:48:86:f7:0d:01:01:05:05:00:03:82:01:01:00:8a:62:69:e6:4c:5d:98:95:3a:dc:0a:6f:1b:21:f3:c3:63:c4:f2:9c:5f:31:81:c0:ce:18:32:84:ed:1c:03:50:62:cf:22:c6:c8:14:75:12:80:9e:cf:3c:52:60:de:21:8a:e8:a6:ad:20:d9:04:33:4c:70:0a:ce:89:62:86:01:fa:dd:03:1f:c9:d7:41:6f:4f:1b:73:20:36:9a:8f:4e:1b:13:a3:77:19:87:23:4b:b8:2f:ef:51:36:8a:14:8d:da:0f:82:16:b1:0b:7d:22:7e:f2:51:9d:01:35:56:c6:ce:2d:3a:6e:9b:bc:f5:da:a8:46:0a:ff:34:bb:0e:a4:9c:63:7c:88:ff:6d:a9:0a:12:49:58:11:6b:fa:c9:44:0d:27:f7:1f:d2:e0:31:19:01:4a:cb:bc:33:ad:96:a1:2e:d4:c8:05:58:5d:de:99:98:23:1e:7c:72:96:e1:5a:2d:e5:61:10:cd:7b:2f:c9:30:56:23:fe:15:37:8d:ef:74:34:75:44:10:a2:a9:42:44:3f:fa:c2:a3:e3:e4:d4:12:51:a2:76:29:83:fa:31:6f:08:52:7d:07:86:4c:d6:6e:17:f5:d4:ca:94:e7:ec:ea:de:d8:28:56:2b:e5:d6:2d:d2:d3:94:c1:bd:83:1c:d7:60:6a:99:20:ba:da:fa" value="16030105d90b0005d50005d20002ea308202e6308201ce020900b5ca76b816420d2e300d06092a864886f70d01010505003031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f301e170d3133313130343032303034365a170d3133313230343032303034365a3039310b3009060355040613024a50310e300c06035504070c054f746f7761310c300a060355040a0c034b6569310c300a06035504030c036b656930820122300d06092a864886f70d01010105000382010f003082010a0282010100a4daad49eae0b5c59da0452978ae987e1b96f149dedb62274c97f99ac4544aa90db4aaf9a0967f118b7009097bcb0baeb4a19636777a7747e06ad84496c9c61d18a7b5ca776585a817526ed6d9f0f2abd8c434c62cbf025eb7ce5a83e4a7f9938f3862de24e6292f43270ffda757c17aaa797ff9fe18fd1cb23921dc585d4550384ff5c4f24e6dfc6d4f44b569345808239247c20d266cd0f5e373889ed4e459590b7d742d2837c1c48dcf9418e22191ab4a0bca0ed79b1d45c0ca5d36ea6960c9360c11412329fd5d90ff3467f2d82e23021adf3b6d8be24903b76effc938154ec219f344118f1c41fec31171b62945a07e35762a961a05795389086052dec70203010001300d06092a864886f70d010105050003820101007b1909cf13cd9d88436b9299e0ce7daa6cd2b94180f14f45c0d0d984ddc9cb46126744e400c5ae375c8a8bac61d2cd97e00d72f4298ae02894b30f53d8d0e083e0eae3a066576cc66e43933a5919718e1af577fe5387c3827fee9b5fce4cb33143cb2eed88afc5251a199714b3bc6f648f28a45a1d5c8bdc903ad431d1c05dec15dbc92d8f6ee3f0b23267408c8d12514c899fe06f970f255fdf70531a65af24c1ef7118c1b9ebae914269e61cbf36a89d75552570442e395173ad89a5ce020f1a050e63a6c8e6c343afa5dcaa087dedae70558b846e5065b65539f145941d0271d06dd8aa688f532da1a598ca3fd7083149393813953aef84e0094506ade99a0002e2308202de308201c602090094f8fffe850d57e3300d06092a864886f70d01010505003031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f301e170d3133313130343031343935365a170d3233313130323031343935365a3031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f30820122300d06092a864886f70d01010105000382010f003082010a0282010100ba7d3b1ed67d7ecfad8d536bee3531747be94ea9e4ac1403a3300fbefdfc4ee241362519fb8e28baa27279408d303f38c3ae1972b2cd5b152edaa2e9a29223f1c91199a0374c5a06d18c0b55d767b78445be755c65787a8bc5e0a9288728457c91441e03216506c87e696eb54f4b149082b1bd83d2772d7ac87cb6f06c61ca0dafec275c9a30a75c9fc8d39a6567210162cdeb5f686670b5850729c12f3d69d516ab28818c43460d3d0531e6b25e0230a184fb1bb8a00ee0b737e248d7e6a70bc6abe2f3d915c3d7583113c8d72855c0e3cb50531480eaece5dbab5ea1641788b3079d3db02a0fe121fd1b411c108a86c4b02f4c8f9b2a8386cf908b4b5319830203010001300d06092a864886f70d010105050003820101008a6269e64c5d98953adc0a6f1b21f3c363c4f29c5f3181c0ce183284ed1c035062cf22c6c8147512809ecf3c5260de218ae8a6ad20d904334c700ace89628601fadd031fc9d7416f4f1b7320369a8f4e1b13a3771987234bb82fef51368a148dda0f8216b10b7d227ef2519d013556c6ce2d3a6e9bbcf5daa8460aff34bb0ea49c637c88ff6da90a124958116bfac9440d27f71fd2e03119014acbbc33ad96a12ed4c805585dde9998231e7c7296e15a2de56110cd7b2fc9305623fe15378def7434754410a2a942443ffac2a3e3e4d41251a2762983fa316f08527d07864cd66e17f5d4ca94e7eceaded828562be5d62dd2d394c1bd831cd7606a9920badafa"/>
+  </field>
+</proto>
+  <proto name="ssl" showname="Secure Sockets Layer" size="1502" pos="0">
+    <field name="ssl.record" showname="TLSv1 Record Layer: Handshake Protocol: Certificate" size="1502" pos="0" show="" value="">
+      <field name="ssl.record.content_type" showname="Content Type: Handshake (22)" size="1" pos="0" show="22" value="16"/>
+      <field name="ssl.record.version" showname="Version: TLS 1.0 (0x0301)" size="2" pos="1" show="0x0301" value="0301"/>
+      <field name="ssl.record.length" showname="Length: 1497" size="2" pos="3" show="1497" value="05d9"/>
+      <field name="ssl.handshake" showname="Handshake Protocol: Certificate" size="1497" pos="5" show="" value="">
+        <field name="ssl.handshake.type" showname="Handshake Type: Certificate (11)" size="1" pos="5" show="11" value="0b"/>
+        <field name="ssl.handshake.length" showname="Length: 1493" size="3" pos="6" show="1493" value="0005d5"/>
+        <field name="ssl.handshake.certificates_length" showname="Certificates Length: 1490" size="3" pos="9" show="1490" value="0005d2"/>
+        <field name="ssl.handshake.certificates" showname="Certificates (1490 bytes)" size="1490" pos="12" show="" value="">
+          <field name="ssl.handshake.certificate_length" showname="Certificate Length: 746" size="3" pos="12" show="746" value="0002ea"/>
+          <field name="ssl.handshake.certificate" showname="Certificate (id-at-commonName=kei,id-at-organizationName=Kei,id-at-localityName=Otowa,id-at-countryName=JP)" size="746" pos="15" show="" value="">
+            <field name="x509af.signedCertificate" showname="signedCertificate" size="466" pos="19" show="" value="">
+              <field name="" show="serialNumber : 0x00b5ca76b816420d2e" size="9" pos="25" value="00b5ca76b816420d2e"/>
+              <field name="x509af.signature" showname="signature (shaWithRSAEncryption)" size="15" pos="34" show="" value="">
+                <field name="x509af.algorithm.id" showname="Algorithm Id: 1.2.840.113549.1.1.5 (shaWithRSAEncryption)" size="9" pos="38" show="1.2.840.113549.1.1.5" value="2a864886f70d010105"/>
+              </field>
+              <field name="x509af.issuer" showname="issuer: rdnSequence (0)" size="51" pos="49" show="0" value="3031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                <field name="x509if.rdnSequence" showname="rdnSequence: 2 items (id-at-commonName=ksnctf.sweetduet.info,id-at-organizationName=ksnctf)" size="49" pos="51" show="2" value="310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-organizationName=ksnctf)" size="15" pos="53" show="1" value="300d060355040a0c066b736e637466">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-organizationName=ksnctf)" size="15" pos="53" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.10 (id-at-organizationName)" size="3" pos="57" show="2.5.4.10" value="55040a"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="8" pos="60" show="4" value="0c066b736e637466">
+                        <field name="x509sat.uTF8String" showname="uTF8String: ksnctf" size="6" pos="62" show="ksnctf" value="6b736e637466"/>
+                      </field>
+                    </field>
+                  </field>
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-commonName=ksnctf.sweetduet.info)" size="30" pos="70" show="1" value="301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-commonName=ksnctf.sweetduet.info)" size="30" pos="70" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.3 (id-at-commonName)" size="3" pos="74" show="2.5.4.3" value="550403"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="23" pos="77" show="4" value="0c156b736e6374662e7377656574647565742e696e666f">
+                        <field name="x509sat.uTF8String" showname="uTF8String: ksnctf.sweetduet.info" size="21" pos="79" show="ksnctf.sweetduet.info" value="6b736e6374662e7377656574647565742e696e666f"/>
+                      </field>
+                    </field>
+                  </field>
+                </field>
+              </field>
+              <field name="x509af.validity" showname="validity" size="32" pos="100" show="" value="">
+                <field name="x509af.notBefore" showname="notBefore: utcTime (0)" size="15" pos="102" show="0" value="170d3133313130343032303034365a">
+                  <field name="x509af.utcTime" showname="utcTime: 13-11-04 02:00:46 (UTC)" size="13" pos="104" show="13-11-04 02:00:46 (UTC)" value="3133313130343032303034365a"/>
+                </field>
+                <field name="x509af.notAfter" showname="notAfter: utcTime (0)" size="15" pos="117" show="0" value="170d3133313230343032303034365a">
+                  <field name="x509af.utcTime" showname="utcTime: 13-12-04 02:00:46 (UTC)" size="13" pos="119" show="13-12-04 02:00:46 (UTC)" value="3133313230343032303034365a"/>
+                </field>
+              </field>
+              <field name="x509af.subject" showname="subject: rdnSequence (0)" size="59" pos="132" show="0" value="3039310b3009060355040613024a50310e300c06035504070c054f746f7761310c300a060355040a0c034b6569310c300a06035504030c036b6569">
+                <field name="x509af.rdnSequence" showname="rdnSequence: 4 items (id-at-commonName=kei,id-at-organizationName=Kei,id-at-localityName=Otowa,id-at-countryName=JP)" size="57" pos="134" show="4" value="310b3009060355040613024a50310e300c06035504070c054f746f7761310c300a060355040a0c034b6569310c300a06035504030c036b6569">
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-countryName=JP)" size="11" pos="136" show="1" value="3009060355040613024a50">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-countryName=JP)" size="11" pos="136" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.6 (id-at-countryName)" size="3" pos="140" show="2.5.4.6" value="550406"/>
+                      <field name="x509sat.CountryName" showname="CountryName: JP" size="2" pos="145" show="JP" value="4a50"/>
+                    </field>
+                  </field>
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-localityName=Otowa)" size="14" pos="149" show="1" value="300c06035504070c054f746f7761">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-localityName=Otowa)" size="14" pos="149" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.7 (id-at-localityName)" size="3" pos="153" show="2.5.4.7" value="550407"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="7" pos="156" show="4" value="0c054f746f7761">
+                        <field name="x509sat.uTF8String" showname="uTF8String: Otowa" size="5" pos="158" show="Otowa" value="4f746f7761"/>
+                      </field>
+                    </field>
+                  </field>
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-organizationName=Kei)" size="12" pos="165" show="1" value="300a060355040a0c034b6569">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-organizationName=Kei)" size="12" pos="165" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.10 (id-at-organizationName)" size="3" pos="169" show="2.5.4.10" value="55040a"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="5" pos="172" show="4" value="0c034b6569">
+                        <field name="x509sat.uTF8String" showname="uTF8String: Kei" size="3" pos="174" show="Kei" value="4b6569"/>
+                      </field>
+                    </field>
+                  </field>
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-commonName=kei)" size="12" pos="179" show="1" value="300a06035504030c036b6569">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-commonName=kei)" size="12" pos="179" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.3 (id-at-commonName)" size="3" pos="183" show="2.5.4.3" value="550403"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="5" pos="186" show="4" value="0c036b6569">
+                        <field name="x509sat.uTF8String" showname="uTF8String: kei" size="3" pos="188" show="kei" value="6b6569"/>
+                      </field>
+                    </field>
+                  </field>
+                </field>
+              </field>
+              <field name="x509af.subjectPublicKeyInfo" showname="subjectPublicKeyInfo" size="294" pos="191" show="" value="">
+                <field name="x509af.algorithm" showname="algorithm (rsaEncryption)" size="15" pos="195" show="" value="">
+                  <field name="x509af.algorithm.id" showname="Algorithm Id: 1.2.840.113549.1.1.1 (rsaEncryption)" size="9" pos="199" show="1.2.840.113549.1.1.1" value="2a864886f70d010101"/>
+                </field>
+                <field name="ber.bitstring.padding" showname="Padding: 0" size="1" pos="214" show="0" value="00"/>
+                <field name="x509af.subjectPublicKey" showname="subjectPublicKey: 3082010a0282010100a4daad49eae0b5c59da0452978ae98..." size="270" pos="215" show="30:82:01:0a:02:82:01:01:00:a4:da:ad:49:ea:e0:b5:c5:9d:a0:45:29:78:ae:98:7e:1b:96:f1:49:de:db:62:27:4c:97:f9:9a:c4:54:4a:a9:0d:b4:aa:f9:a0:96:7f:11:8b:70:09:09:7b:cb:0b:ae:b4:a1:96:36:77:7a:77:47:e0:6a:d8:44:96:c9:c6:1d:18:a7:b5:ca:77:65:85:a8:17:52:6e:d6:d9:f0:f2:ab:d8:c4:34:c6:2c:bf:02:5e:b7:ce:5a:83:e4:a7:f9:93:8f:38:62:de:24:e6:29:2f:43:27:0f:fd:a7:57:c1:7a:aa:79:7f:f9:fe:18:fd:1c:b2:39:21:dc:58:5d:45:50:38:4f:f5:c4:f2:4e:6d:fc:6d:4f:44:b5:69:34:58:08:23:92:47:c2:0d:26:6c:d0:f5:e3:73:88:9e:d4:e4:59:59:0b:7d:74:2d:28:37:c1:c4:8d:cf:94:18:e2:21:91:ab:4a:0b:ca:0e:d7:9b:1d:45:c0:ca:5d:36:ea:69:60:c9:36:0c:11:41:23:29:fd:5d:90:ff:34:67:f2:d8:2e:23:02:1a:df:3b:6d:8b:e2:49:03:b7:6e:ff:c9:38:15:4e:c2:19:f3:44:11:8f:1c:41:fe:c3:11:71:b6:29:45:a0:7e:35:76:2a:96:1a:05:79:53:89:08:60:52:de:c7:02:03:01:00:01" value="3082010a0282010100a4daad49eae0b5c59da0452978ae987e1b96f149dedb62274c97f99ac4544aa90db4aaf9a0967f118b7009097bcb0baeb4a19636777a7747e06ad84496c9c61d18a7b5ca776585a817526ed6d9f0f2abd8c434c62cbf025eb7ce5a83e4a7f9938f3862de24e6292f43270ffda757c17aaa797ff9fe18fd1cb23921dc585d4550384ff5c4f24e6dfc6d4f44b569345808239247c20d266cd0f5e373889ed4e459590b7d742d2837c1c48dcf9418e22191ab4a0bca0ed79b1d45c0ca5d36ea6960c9360c11412329fd5d90ff3467f2d82e23021adf3b6d8be24903b76effc938154ec219f344118f1c41fec31171b62945a07e35762a961a05795389086052dec70203010001"/>
+              </field>
+            </field>
+            <field name="x509af.algorithmIdentifier" showname="algorithmIdentifier (shaWithRSAEncryption)" size="15" pos="485" show="" value="">
+              <field name="x509af.algorithm.id" showname="Algorithm Id: 1.2.840.113549.1.1.5 (shaWithRSAEncryption)" size="9" pos="489" show="1.2.840.113549.1.1.5" value="2a864886f70d010105"/>
+            </field>
+            <field name="ber.bitstring.padding" showname="Padding: 0" size="1" pos="504" show="0" value="00"/>
+            <field name="x509af.encrypted" showname="encrypted: 7b1909cf13cd9d88436b9299e0ce7daa6cd2b94180f14f45..." size="256" pos="505" show="7b:19:09:cf:13:cd:9d:88:43:6b:92:99:e0:ce:7d:aa:6c:d2:b9:41:80:f1:4f:45:c0:d0:d9:84:dd:c9:cb:46:12:67:44:e4:00:c5:ae:37:5c:8a:8b:ac:61:d2:cd:97:e0:0d:72:f4:29:8a:e0:28:94:b3:0f:53:d8:d0:e0:83:e0:ea:e3:a0:66:57:6c:c6:6e:43:93:3a:59:19:71:8e:1a:f5:77:fe:53:87:c3:82:7f:ee:9b:5f:ce:4c:b3:31:43:cb:2e:ed:88:af:c5:25:1a:19:97:14:b3:bc:6f:64:8f:28:a4:5a:1d:5c:8b:dc:90:3a:d4:31:d1:c0:5d:ec:15:db:c9:2d:8f:6e:e3:f0:b2:32:67:40:8c:8d:12:51:4c:89:9f:e0:6f:97:0f:25:5f:df:70:53:1a:65:af:24:c1:ef:71:18:c1:b9:eb:ae:91:42:69:e6:1c:bf:36:a8:9d:75:55:25:70:44:2e:39:51:73:ad:89:a5:ce:02:0f:1a:05:0e:63:a6:c8:e6:c3:43:af:a5:dc:aa:08:7d:ed:ae:70:55:8b:84:6e:50:65:b6:55:39:f1:45:94:1d:02:71:d0:6d:d8:aa:68:8f:53:2d:a1:a5:98:ca:3f:d7:08:31:49:39:38:13:95:3a:ef:84:e0:09:45:06:ad:e9:9a" value="7b1909cf13cd9d88436b9299e0ce7daa6cd2b94180f14f45c0d0d984ddc9cb46126744e400c5ae375c8a8bac61d2cd97e00d72f4298ae02894b30f53d8d0e083e0eae3a066576cc66e43933a5919718e1af577fe5387c3827fee9b5fce4cb33143cb2eed88afc5251a199714b3bc6f648f28a45a1d5c8bdc903ad431d1c05dec15dbc92d8f6ee3f0b23267408c8d12514c899fe06f970f255fdf70531a65af24c1ef7118c1b9ebae914269e61cbf36a89d75552570442e395173ad89a5ce020f1a050e63a6c8e6c343afa5dcaa087dedae70558b846e5065b65539f145941d0271d06dd8aa688f532da1a598ca3fd7083149393813953aef84e0094506ade99a"/>
+          </field>
+          <field name="ssl.handshake.certificate_length" showname="Certificate Length: 738" size="3" pos="761" show="738" value="0002e2"/>
+          <field name="ssl.handshake.certificate" showname="Certificate (id-at-commonName=ksnctf.sweetduet.info,id-at-organizationName=ksnctf)" size="738" pos="764" show="" value="">
+            <field name="x509af.signedCertificate" showname="signedCertificate" size="458" pos="768" show="" value="">
+              <field name="" show="serialNumber : 0x0094f8fffe850d57e3" size="9" pos="774" value="0094f8fffe850d57e3"/>
+              <field name="x509af.signature" showname="signature (shaWithRSAEncryption)" size="15" pos="783" show="" value="">
+                <field name="x509af.algorithm.id" showname="Algorithm Id: 1.2.840.113549.1.1.5 (shaWithRSAEncryption)" size="9" pos="787" show="1.2.840.113549.1.1.5" value="2a864886f70d010105"/>
+              </field>
+              <field name="x509af.issuer" showname="issuer: rdnSequence (0)" size="51" pos="798" show="0" value="3031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                <field name="x509if.rdnSequence" showname="rdnSequence: 2 items (id-at-commonName=ksnctf.sweetduet.info,id-at-organizationName=ksnctf)" size="49" pos="800" show="2" value="310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-organizationName=ksnctf)" size="15" pos="802" show="1" value="300d060355040a0c066b736e637466">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-organizationName=ksnctf)" size="15" pos="802" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.10 (id-at-organizationName)" size="3" pos="806" show="2.5.4.10" value="55040a"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="8" pos="809" show="4" value="0c066b736e637466">
+                        <field name="x509sat.uTF8String" showname="uTF8String: ksnctf" size="6" pos="811" show="ksnctf" value="6b736e637466"/>
+                      </field>
+                    </field>
+                  </field>
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-commonName=ksnctf.sweetduet.info)" size="30" pos="819" show="1" value="301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-commonName=ksnctf.sweetduet.info)" size="30" pos="819" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.3 (id-at-commonName)" size="3" pos="823" show="2.5.4.3" value="550403"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="23" pos="826" show="4" value="0c156b736e6374662e7377656574647565742e696e666f">
+                        <field name="x509sat.uTF8String" showname="uTF8String: ksnctf.sweetduet.info" size="21" pos="828" show="ksnctf.sweetduet.info" value="6b736e6374662e7377656574647565742e696e666f"/>
+                      </field>
+                    </field>
+                  </field>
+                </field>
+              </field>
+              <field name="x509af.validity" showname="validity" size="32" pos="849" show="" value="">
+                <field name="x509af.notBefore" showname="notBefore: utcTime (0)" size="15" pos="851" show="0" value="170d3133313130343031343935365a">
+                  <field name="x509af.utcTime" showname="utcTime: 13-11-04 01:49:56 (UTC)" size="13" pos="853" show="13-11-04 01:49:56 (UTC)" value="3133313130343031343935365a"/>
+                </field>
+                <field name="x509af.notAfter" showname="notAfter: utcTime (0)" size="15" pos="866" show="0" value="170d3233313130323031343935365a">
+                  <field name="x509af.utcTime" showname="utcTime: 23-11-02 01:49:56 (UTC)" size="13" pos="868" show="23-11-02 01:49:56 (UTC)" value="3233313130323031343935365a"/>
+                </field>
+              </field>
+              <field name="x509af.subject" showname="subject: rdnSequence (0)" size="51" pos="881" show="0" value="3031310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                <field name="x509af.rdnSequence" showname="rdnSequence: 2 items (id-at-commonName=ksnctf.sweetduet.info,id-at-organizationName=ksnctf)" size="49" pos="883" show="2" value="310f300d060355040a0c066b736e637466311e301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-organizationName=ksnctf)" size="15" pos="885" show="1" value="300d060355040a0c066b736e637466">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-organizationName=ksnctf)" size="15" pos="885" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.10 (id-at-organizationName)" size="3" pos="889" show="2.5.4.10" value="55040a"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="8" pos="892" show="4" value="0c066b736e637466">
+                        <field name="x509sat.uTF8String" showname="uTF8String: ksnctf" size="6" pos="894" show="ksnctf" value="6b736e637466"/>
+                      </field>
+                    </field>
+                  </field>
+                  <field name="x509if.RDNSequence_item" showname="RDNSequence item: 1 item (id-at-commonName=ksnctf.sweetduet.info)" size="30" pos="902" show="1" value="301c06035504030c156b736e6374662e7377656574647565742e696e666f">
+                    <field name="x509if.RelativeDistinguishedName_item" showname="RelativeDistinguishedName item (id-at-commonName=ksnctf.sweetduet.info)" size="30" pos="902" show="" value="">
+                      <field name="x509if.id" showname="Id: 2.5.4.3 (id-at-commonName)" size="3" pos="906" show="2.5.4.3" value="550403"/>
+                      <field name="x509sat.DirectoryString" showname="DirectoryString: uTF8String (4)" size="23" pos="909" show="4" value="0c156b736e6374662e7377656574647565742e696e666f">
+                        <field name="x509sat.uTF8String" showname="uTF8String: ksnctf.sweetduet.info" size="21" pos="911" show="ksnctf.sweetduet.info" value="6b736e6374662e7377656574647565742e696e666f"/>
+                      </field>
+                    </field>
+                  </field>
+                </field>
+              </field>
+              <field name="x509af.subjectPublicKeyInfo" showname="subjectPublicKeyInfo" size="294" pos="932" show="" value="">
+                <field name="x509af.algorithm" showname="algorithm (rsaEncryption)" size="15" pos="936" show="" value="">
+                  <field name="x509af.algorithm.id" showname="Algorithm Id: 1.2.840.113549.1.1.1 (rsaEncryption)" size="9" pos="940" show="1.2.840.113549.1.1.1" value="2a864886f70d010101"/>
+                </field>
+                <field name="ber.bitstring.padding" showname="Padding: 0" size="1" pos="955" show="0" value="00"/>
+                <field name="x509af.subjectPublicKey" showname="subjectPublicKey: 3082010a0282010100ba7d3b1ed67d7ecfad8d536bee3531..." size="270" pos="956" show="30:82:01:0a:02:82:01:01:00:ba:7d:3b:1e:d6:7d:7e:cf:ad:8d:53:6b:ee:35:31:74:7b:e9:4e:a9:e4:ac:14:03:a3:30:0f:be:fd:fc:4e:e2:41:36:25:19:fb:8e:28:ba:a2:72:79:40:8d:30:3f:38:c3:ae:19:72:b2:cd:5b:15:2e:da:a2:e9:a2:92:23:f1:c9:11:99:a0:37:4c:5a:06:d1:8c:0b:55:d7:67:b7:84:45:be:75:5c:65:78:7a:8b:c5:e0:a9:28:87:28:45:7c:91:44:1e:03:21:65:06:c8:7e:69:6e:b5:4f:4b:14:90:82:b1:bd:83:d2:77:2d:7a:c8:7c:b6:f0:6c:61:ca:0d:af:ec:27:5c:9a:30:a7:5c:9f:c8:d3:9a:65:67:21:01:62:cd:eb:5f:68:66:70:b5:85:07:29:c1:2f:3d:69:d5:16:ab:28:81:8c:43:46:0d:3d:05:31:e6:b2:5e:02:30:a1:84:fb:1b:b8:a0:0e:e0:b7:37:e2:48:d7:e6:a7:0b:c6:ab:e2:f3:d9:15:c3:d7:58:31:13:c8:d7:28:55:c0:e3:cb:50:53:14:80:ea:ec:e5:db:ab:5e:a1:64:17:88:b3:07:9d:3d:b0:2a:0f:e1:21:fd:1b:41:1c:10:8a:86:c4:b0:2f:4c:8f:9b:2a:83:86:cf:90:8b:4b:53:19:83:02:03:01:00:01" value="3082010a0282010100ba7d3b1ed67d7ecfad8d536bee3531747be94ea9e4ac1403a3300fbefdfc4ee241362519fb8e28baa27279408d303f38c3ae1972b2cd5b152edaa2e9a29223f1c91199a0374c5a06d18c0b55d767b78445be755c65787a8bc5e0a9288728457c91441e03216506c87e696eb54f4b149082b1bd83d2772d7ac87cb6f06c61ca0dafec275c9a30a75c9fc8d39a6567210162cdeb5f686670b5850729c12f3d69d516ab28818c43460d3d0531e6b25e0230a184fb1bb8a00ee0b737e248d7e6a70bc6abe2f3d915c3d7583113c8d72855c0e3cb50531480eaece5dbab5ea1641788b3079d3db02a0fe121fd1b411c108a86c4b02f4c8f9b2a8386cf908b4b5319830203010001"/>
+              </field>
+            </field>
+            <field name="x509af.algorithmIdentifier" showname="algorithmIdentifier (shaWithRSAEncryption)" size="15" pos="1226" show="" value="">
+              <field name="x509af.algorithm.id" showname="Algorithm Id: 1.2.840.113549.1.1.5 (shaWithRSAEncryption)" size="9" pos="1230" show="1.2.840.113549.1.1.5" value="2a864886f70d010105"/>
+            </field>
+            <field name="ber.bitstring.padding" showname="Padding: 0" size="1" pos="1245" show="0" value="00"/>
+            <field name="x509af.encrypted" showname="encrypted: 8a6269e64c5d98953adc0a6f1b21f3c363c4f29c5f3181c0..." size="256" pos="1246" show="8a:62:69:e6:4c:5d:98:95:3a:dc:0a:6f:1b:21:f3:c3:63:c4:f2:9c:5f:31:81:c0:ce:18:32:84:ed:1c:03:50:62:cf:22:c6:c8:14:75:12:80:9e:cf:3c:52:60:de:21:8a:e8:a6:ad:20:d9:04:33:4c:70:0a:ce:89:62:86:01:fa:dd:03:1f:c9:d7:41:6f:4f:1b:73:20:36:9a:8f:4e:1b:13:a3:77:19:87:23:4b:b8:2f:ef:51:36:8a:14:8d:da:0f:82:16:b1:0b:7d:22:7e:f2:51:9d:01:35:56:c6:ce:2d:3a:6e:9b:bc:f5:da:a8:46:0a:ff:34:bb:0e:a4:9c:63:7c:88:ff:6d:a9:0a:12:49:58:11:6b:fa:c9:44:0d:27:f7:1f:d2:e0:31:19:01:4a:cb:bc:33:ad:96:a1:2e:d4:c8:05:58:5d:de:99:98:23:1e:7c:72:96:e1:5a:2d:e5:61:10:cd:7b:2f:c9:30:56:23:fe:15:37:8d:ef:74:34:75:44:10:a2:a9:42:44:3f:fa:c2:a3:e3:e4:d4:12:51:a2:76:29:83:fa:31:6f:08:52:7d:07:86:4c:d6:6e:17:f5:d4:ca:94:e7:ec:ea:de:d8:28:56:2b:e5:d6:2d:d2:d3:94:c1:bd:83:1c:d7:60:6a:99:20:ba:da:fa" value="8a6269e64c5d98953adc0a6f1b21f3c363c4f29c5f3181c0ce183284ed1c035062cf22c6c8147512809ecf3c5260de218ae8a6ad20d904334c700ace89628601fadd031fc9d7416f4f1b7320369a8f4e1b13a3771987234bb82fef51368a148dda0f8216b10b7d227ef2519d013556c6ce2d3a6e9bbcf5daa8460aff34bb0ea49c637c88ff6da90a124958116bfac9440d27f71fd2e03119014acbbc33ad96a12ed4c805585dde9998231e7c7296e15a2de56110cd7b2fc9305623fe15378def7434754410a2a942443ffac2a3e3e4d41251a2762983fa316f08527d07864cd66e17f5d4ca94e7eceaded828562be5d62dd2d394c1bd831cd7606a9920badafa"/>
+          </field>
+        </field>
+      </field>
+    </field>
+  </proto>
+  <proto name="ssl" showname="Secure Sockets Layer" size="9" pos="182">
+    <field name="ssl.record" showname="TLSv1 Record Layer: Handshake Protocol: Server Hello Done" size="9" pos="182" show="" value="">
+      <field name="ssl.record.content_type" showname="Content Type: Handshake (22)" size="1" pos="182" show="22" value="16"/>
+      <field name="ssl.record.version" showname="Version: TLS 1.0 (0x0301)" size="2" pos="183" show="0x0301" value="0301"/>
+      <field name="ssl.record.length" showname="Length: 4" size="2" pos="185" show="4" value="0004"/>
+      <field name="ssl.handshake" showname="Handshake Protocol: Server Hello Done" size="4" pos="187" show="" value="">
+        <field name="ssl.handshake.type" showname="Handshake Type: Server Hello Done (14)" size="1" pos="187" show="14" value="0e"/>
+        <field name="ssl.handshake.length" showname="Length: 0" size="3" pos="188" show="0" value="000000"/>
+      </field>
+    </field>
+  </proto>
+</packet>
+
+</pdml>

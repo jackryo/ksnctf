@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
+<!-- You can find pdml2html.xsl in /usr/share/wireshark or at http://anonsvn.wireshark.org/trunk/wireshark/pdml2html.xsl. -->
+<pdml version="0" creator="wireshark/1.10.6" time="Mon Mar 13 02:50:16 2017" capture_file="/home/ryo/hobby/ctf/q33/q33.pcap">
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="364">
+    <field name="num" pos="0" show="9" showname="Number" value="9" size="364"/>
+    <field name="len" pos="0" show="364" showname="Frame Length" value="16c" size="364"/>
+    <field name="caplen" pos="0" show="364" showname="Captured Length" value="16c" size="364"/>
+    <field name="timestamp" pos="0" show="Nov  4, 2013 13:02:38.600798000 JST" showname="Captured Time" value="1383537758.600798000" size="364"/>
+  </proto>
+  <proto name="frame" showname="Frame 9: 364 bytes on wire (2912 bits), 364 bytes captured (2912 bits)" size="364" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: Nov  4, 2013 13:02:38.600798000 JST" size="0" pos="0" show="Nov  4, 2013 13:02:38.600798000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_epoch" showname="Epoch Time: 1383537758.600798000 seconds" size="0" pos="0" show="1383537758.600798000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000071000 seconds" size="0" pos="0" show="0.000071000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000071000 seconds" size="0" pos="0" show="0.000071000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 0.001999000 seconds" size="0" pos="0" show="0.001999000"/>
+    <field name="frame.number" showname="Frame Number: 9" size="0" pos="0" show="9"/>
+    <field name="frame.len" showname="Frame Length: 364 bytes (2912 bits)" size="0" pos="0" show="364"/>
+    <field name="frame.cap_len" showname="Capture Length: 364 bytes (2912 bits)" size="0" pos="0" show="364"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="0"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="0"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ip:tcp:ssl" size="0" pos="0" show="eth:ip:tcp:ssl"/>
+    <field name="frame.coloring_rule.name" showname="Coloring Rule Name: TCP" size="0" pos="0" show="TCP"/>
+    <field name="frame.coloring_rule.string" showname="Coloring Rule String: tcp" size="0" pos="0" show="tcp"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: Vmware_37:6a:33 (00:0c:29:37:6a:33), Dst: Vmware_f4:85:b0 (00:50:56:f4:85:b0)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: Vmware_f4:85:b0 (00:50:56:f4:85:b0)" size="6" pos="0" show="00:50:56:f4:85:b0" value="005056f485b0">
+      <field name="eth.addr" showname="Address: Vmware_f4:85:b0 (00:50:56:f4:85:b0)" size="6" pos="0" show="00:50:56:f4:85:b0" value="005056f485b0"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="0" value="0" unmaskedvalue="005056"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="0" value="0" unmaskedvalue="005056"/>
+    </field>
+    <field name="eth.src" showname="Source: Vmware_37:6a:33 (00:0c:29:37:6a:33)" size="6" pos="6" show="00:0c:29:37:6a:33" value="000c29376a33">
+      <field name="eth.addr" showname="Address: Vmware_37:6a:33 (00:0c:29:37:6a:33)" size="6" pos="6" show="00:0c:29:37:6a:33" value="000c29376a33"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="0" value="0" unmaskedvalue="000c29"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="0" value="0" unmaskedvalue="000c29"/>
+    </field>
+    <field name="eth.type" showname="Type: IP (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 192.168.66.129 (192.168.66.129), Dst: 192.168.0.39 (192.168.0.39)" size="20" pos="14">
+    <field name="ip.version" showname="Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname="Header length: 20 bytes" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP 0x00: Default; ECN: 0x00: Not-ECT (Not ECN-Capable Transport))" size="1" pos="15" show="0" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0x00)" size="1" pos="15" show="0x00" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not-ECT (Not ECN-Capable Transport) (0x00)" size="1" pos="15" show="0x00" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 350" size="2" pos="16" show="350" value="015e"/>
+    <field name="ip.id" showname="Identification: 0x11fe (4606)" size="2" pos="18" show="0x11fe" value="11fe"/>
+    <field name="ip.flags" showname="Flags: 0x02 (Don&apos;t Fragment)" size="1" pos="20" show="0x02" value="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="0" value="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&apos;t fragment: Set" size="1" pos="20" show="1" value="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="0" value="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="Fragment offset: 0" size="2" pos="20" show="0" value="4000"/>
+    <field name="ip.ttl" showname="Time to live: 128" size="1" pos="22" show="128" value="80"/>
+    <field name="ip.proto" showname="Protocol: TCP (6)" size="1" pos="23" show="6" value="06"/>
+    <field name="ip.checksum" showname="Header checksum: 0x23a3 [validation disabled]" size="2" pos="24" show="0x23a3" value="23a3">
+      <field name="ip.checksum_good" showname="Good: False" size="2" pos="24" show="0" value="23a3"/>
+      <field name="ip.checksum_bad" showname="Bad: False" size="2" pos="24" show="0" value="23a3"/>
+    </field>
+    <field name="ip.src" showname="Source: 192.168.66.129 (192.168.66.129)" size="4" pos="26" show="192.168.66.129" value="c0a84281"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.66.129 (192.168.66.129)" hide="yes" size="4" pos="26" show="192.168.66.129" value="c0a84281"/>
+    <field name="ip.src_host" showname="Source Host: 192.168.66.129" hide="yes" size="4" pos="26" show="192.168.66.129" value="c0a84281"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.66.129" hide="yes" size="4" pos="26" show="192.168.66.129" value="c0a84281"/>
+    <field name="ip.dst" showname="Destination: 192.168.0.39 (192.168.0.39)" size="4" pos="30" show="192.168.0.39" value="c0a80027"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.0.39 (192.168.0.39)" hide="yes" size="4" pos="30" show="192.168.0.39" value="c0a80027"/>
+    <field name="ip.dst_host" showname="Destination Host: 192.168.0.39" hide="yes" size="4" pos="30" show="192.168.0.39" value="c0a80027"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.0.39" hide="yes" size="4" pos="30" show="192.168.0.39" value="c0a80027"/>
+    <field name="" show="Source GeoIP: Unknown" size="4" pos="26" value="c0a84281"/>
+    <field name="" show="Destination GeoIP: Unknown" size="4" pos="30" value="c0a80027"/>
+  </proto>
+  <proto name="tcp" showname="Transmission Control Protocol, Src Port: coauthor (1529), Dst Port: https (443), Seq: 78, Ack: 1606, Len: 310" size="20" pos="34">
+    <field name="tcp.srcport" showname="Source port: coauthor (1529)" size="2" pos="34" show="1529" value="05f9"/>
+    <field name="tcp.dstport" showname="Destination port: https (443)" size="2" pos="36" show="443" value="01bb"/>
+    <field name="tcp.port" showname="Source or Destination Port: 1529" hide="yes" size="2" pos="34" show="1529" value="05f9"/>
+    <field name="tcp.port" showname="Source or Destination Port: 443" hide="yes" size="2" pos="36" show="443" value="01bb"/>
+    <field name="tcp.stream" showname="Stream index: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.len" showname="TCP Segment Len: 310" hide="yes" size="1" pos="46" show="310" value="50"/>
+    <field name="tcp.seq" showname="Sequence number: 78    (relative sequence number)" size="4" pos="38" show="78" value="062b11d4"/>
+    <field name="tcp.nxtseq" showname="Next sequence number: 388    (relative sequence number)" size="0" pos="34" show="388"/>
+    <field name="tcp.ack" showname="Acknowledgment number: 1606    (relative ack number)" size="4" pos="42" show="1606" value="6e99090a"/>
+    <field name="tcp.hdr_len" showname="Header length: 20 bytes" size="1" pos="46" show="20" value="50"/>
+    <field name="tcp.flags" showname="Flags: 0x018 (PSH, ACK)" size="2" pos="46" show="0x0018" value="18" unmaskedvalue="5018">
+      <field name="tcp.flags.res" showname="000. .... .... = Reserved: Not set" size="1" pos="46" show="0" value="0" unmaskedvalue="50"/>
+      <field name="tcp.flags.ns" showname="...0 .... .... = Nonce: Not set" size="1" pos="46" show="0" value="0" unmaskedvalue="50"/>
+      <field name="tcp.flags.cwr" showname=".... 0... .... = Congestion Window Reduced (CWR): Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.ecn" showname=".... .0.. .... = ECN-Echo: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.urg" showname=".... ..0. .... = Urgent: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.ack" showname=".... ...1 .... = Acknowledgment: Set" size="1" pos="47" show="1" value="1" unmaskedvalue="18"/>
+      <field name="tcp.flags.push" showname=".... .... 1... = Push: Set" size="1" pos="47" show="1" value="1" unmaskedvalue="18"/>
+      <field name="tcp.flags.reset" showname=".... .... .0.. = Reset: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.syn" showname=".... .... ..0. = Syn: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.fin" showname=".... .... ...0 = Fin: Not set" size="1" pos="47" show="0" value="0" unmaskedvalue="18"/>
+    </field>
+    <field name="tcp.window_size_value" showname="Window size value: 64240" size="2" pos="48" show="64240" value="faf0"/>
+    <field name="tcp.window_size" showname="Calculated window size: 64240" size="2" pos="48" show="64240" value="faf0"/>
+    <field name="tcp.window_size_scalefactor" showname="Window size scaling factor: -2 (no window scaling used)" size="2" pos="48" show="-2" value="faf0"/>
+    <field name="tcp.checksum" showname="Checksum: 0x02a8 [validation disabled]" size="2" pos="50" show="0x02a8" value="02a8">
+      <field name="tcp.checksum_good" showname="Good Checksum: False" size="2" pos="50" show="0" value="02a8"/>
+      <field name="tcp.checksum_bad" showname="Bad Checksum: False" size="2" pos="50" show="0" value="02a8"/>
+    </field>
+    <field name="tcp.analysis" showname="SEQ/ACK analysis" size="0" pos="34" show="" value="">
+      <field name="tcp.analysis.bytes_in_flight" showname="Bytes in flight: 310" size="0" pos="34" show="310"/>
+    </field>
+  </proto>
+  <proto name="ssl" showname="Secure Sockets Layer" size="310" pos="54">
+    <field name="ssl.record" showname="TLSv1 Record Layer: Handshake Protocol: Client Key Exchange" size="267" pos="54" show="" value="">
+      <field name="ssl.record.content_type" showname="Content Type: Handshake (22)" size="1" pos="54" show="22" value="16"/>
+      <field name="ssl.record.version" showname="Version: TLS 1.0 (0x0301)" size="2" pos="55" show="0x0301" value="0301"/>
+      <field name="ssl.record.length" showname="Length: 262" size="2" pos="57" show="262" value="0106"/>
+      <field name="ssl.handshake" showname="Handshake Protocol: Client Key Exchange" size="262" pos="59" show="" value="">
+        <field name="ssl.handshake.type" showname="Handshake Type: Client Key Exchange (16)" size="1" pos="59" show="16" value="10"/>
+        <field name="ssl.handshake.length" showname="Length: 258" size="3" pos="60" show="258" value="000102"/>
+        <field name="" show="RSA Encrypted PreMaster Secret" size="258" pos="63" value="010089ef407aa9a06ae30aa78b3ce62be4834e14065d2adaeefb2be0c4b8926db319c8bb999184251fcdd7b9750d4388118221987f32b50140ac34e818bb6f587b7c8422d3343337dde197376a1d57327aad5df4171ae99667a0723bd6f98fd3af50383691f699f319c0dbd3eed53cefa93549b21df05de18950addcc1fc57dccb8ec111f7b89b4f31e21775f3c31678a3daff6b3b463460448c7de14f69fb99828f3f122bdc7f60e78b09985c24a356609df2d7d4cdff58be44da061bee0b44a4e7853ad4235ecce1dfb69d258694b7f1360e7931e5e5fcada67a229f5a1b45ccf3e75d484f6bbcb51850474c6d64db8f98012ddaf0b7bf94455c35f671034c0486">
+          <field name="ssl.handshake.epms_len" showname="Encrypted PreMaster length: 256" size="2" pos="63" show="256" value="0100"/>
+          <field name="ssl.handshake.epms" showname="Encrypted PreMaster: 89ef407aa9a06ae30aa78b3ce62be4834e14065d2adaeefb..." size="256" pos="65" show="89:ef:40:7a:a9:a0:6a:e3:0a:a7:8b:3c:e6:2b:e4:83:4e:14:06:5d:2a:da:ee:fb:2b:e0:c4:b8:92:6d:b3:19:c8:bb:99:91:84:25:1f:cd:d7:b9:75:0d:43:88:11:82:21:98:7f:32:b5:01:40:ac:34:e8:18:bb:6f:58:7b:7c:84:22:d3:34:33:37:dd:e1:97:37:6a:1d:57:32:7a:ad:5d:f4:17:1a:e9:96:67:a0:72:3b:d6:f9:8f:d3:af:50:38:36:91:f6:99:f3:19:c0:db:d3:ee:d5:3c:ef:a9:35:49:b2:1d:f0:5d:e1:89:50:ad:dc:c1:fc:57:dc:cb:8e:c1:11:f7:b8:9b:4f:31:e2:17:75:f3:c3:16:78:a3:da:ff:6b:3b:46:34:60:44:8c:7d:e1:4f:69:fb:99:82:8f:3f:12:2b:dc:7f:60:e7:8b:09:98:5c:24:a3:56:60:9d:f2:d7:d4:cd:ff:58:be:44:da:06:1b:ee:0b:44:a4:e7:85:3a:d4:23:5e:cc:e1:df:b6:9d:25:86:94:b7:f1:36:0e:79:31:e5:e5:fc:ad:a6:7a:22:9f:5a:1b:45:cc:f3:e7:5d:48:4f:6b:bc:b5:18:50:47:4c:6d:64:db:8f:98:01:2d:da:f0:b7:bf:94:45:5c:35:f6:71:03:4c:04:86" value="89ef407aa9a06ae30aa78b3ce62be4834e14065d2adaeefb2be0c4b8926db319c8bb999184251fcdd7b9750d4388118221987f32b50140ac34e818bb6f587b7c8422d3343337dde197376a1d57327aad5df4171ae99667a0723bd6f98fd3af50383691f699f319c0dbd3eed53cefa93549b21df05de18950addcc1fc57dccb8ec111f7b89b4f31e21775f3c31678a3daff6b3b463460448c7de14f69fb99828f3f122bdc7f60e78b09985c24a356609df2d7d4cdff58be44da061bee0b44a4e7853ad4235ecce1dfb69d258694b7f1360e7931e5e5fcada67a229f5a1b45ccf3e75d484f6bbcb51850474c6d64db8f98012ddaf0b7bf94455c35f671034c0486"/>
+        </field>
+      </field>
+    </field>
+    <field name="ssl.record" showname="TLSv1 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec" size="6" pos="321" show="" value="">
+      <field name="ssl.record.content_type" showname="Content Type: Change Cipher Spec (20)" size="1" pos="321" show="20" value="14"/>
+      <field name="ssl.record.version" showname="Version: TLS 1.0 (0x0301)" size="2" pos="322" show="0x0301" value="0301"/>
+      <field name="ssl.record.length" showname="Length: 1" size="2" pos="324" show="1" value="0001"/>
+      <field name="ssl.change_cipher_spec" showname="Change Cipher Spec Message" size="1" pos="326" show="" value=""/>
+    </field>
+    <field name="ssl.record" showname="TLSv1 Record Layer: Handshake Protocol: Encrypted Handshake Message" size="37" pos="327" show="" value="">
+      <field name="ssl.record.content_type" showname="Content Type: Handshake (22)" size="1" pos="327" show="22" value="16"/>
+      <field name="ssl.record.version" showname="Version: TLS 1.0 (0x0301)" size="2" pos="328" show="0x0301" value="0301"/>
+      <field name="ssl.record.length" showname="Length: 32" size="2" pos="330" show="32" value="0020"/>
+      <field name="ssl.handshake" showname="Handshake Protocol: Encrypted Handshake Message" size="32" pos="332" show="" value=""/>
+    </field>
+  </proto>
+</packet>
+
+</pdml>
